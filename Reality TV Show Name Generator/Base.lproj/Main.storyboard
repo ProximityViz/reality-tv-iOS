@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="tv" translatesAutoresizingMaskIntoConstraints="NO" id="PGN-Lh-VTt">
-                                <rect key="frame" x="136" y="28" width="329" height="298"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fancy tv" translatesAutoresizingMaskIntoConstraints="NO" id="T10-gB-rPY">
+                                <rect key="frame" x="157" y="86" width="286" height="275"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="298" id="7c2-2S-j8t"/>
-                                    <constraint firstAttribute="width" constant="329" id="mTg-WQ-gci"/>
+                                    <constraint firstAttribute="height" constant="275" id="RxD-bU-Taw"/>
+                                    <constraint firstAttribute="width" constant="286" id="Rya-v5-hZh"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Real Housewives of Goes to College" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYM-ds-W2t">
@@ -34,7 +34,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkJ-EL-hjn">
                                 <rect key="frame" x="200" y="488" width="200" height="42"/>
-                                <color key="backgroundColor" red="0.32156862745098036" green="0.396078431372549" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.41568630933761597" blue="0.79607850313186646" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="DC5-g0-Bi7"/>
                                     <constraint firstAttribute="height" constant="42" id="vUQ-0H-PMG"/>
@@ -54,11 +54,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.88235294117647056" green="0.81960784313725488" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.070588238537311554" green="0.64705884456634521" blue="0.44313728809356689" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="T10-gB-rPY" secondAttribute="centerX" id="0K4-DO-pWz"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="IkJ-EL-hjn" secondAttribute="bottom" constant="70" id="5Am-TB-vr8"/>
+                            <constraint firstItem="T10-gB-rPY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="66" id="5ZD-PJ-jzh"/>
                             <constraint firstAttribute="centerX" secondItem="IkJ-EL-hjn" secondAttribute="centerX" id="8Bm-tE-AYB"/>
-                            <constraint firstAttribute="centerX" secondItem="PGN-Lh-VTt" secondAttribute="centerX" id="KUz-e1-MF5"/>
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="Mi9-rH-eSi"/>
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="dGd-km-pQN"/>
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="fRg-cH-Eqp"/>
@@ -76,6 +77,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tv" width="853" height="853"/>
+        <image name="fancy tv" width="2076" height="1928"/>
     </resources>
 </document>
