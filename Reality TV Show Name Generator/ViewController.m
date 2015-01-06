@@ -37,8 +37,6 @@
     [self makeName];
 }
 
-
-
 - (IBAction)shareName:(id)sender {
     self.activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[self.currentName] applicationActivities:nil];
     [self presentViewController:self.activityViewController animated:YES completion:nil];

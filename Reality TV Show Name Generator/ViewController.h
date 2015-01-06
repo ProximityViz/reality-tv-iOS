@@ -15,7 +15,7 @@
 @property (weak, nonatomic) NSString *currentName;
 @property (strong, nonatomic) RandomName *randomName;
 - (IBAction)generateName;
-@property (weak, nonatomic) IBOutlet UIButton *shareButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *shareButton;
 - (IBAction)shareName:(id)sender;
 @property (strong, nonatomic) UIActivityViewController *activityViewController;
 

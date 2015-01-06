@@ -1,1 +1,3 @@
-Photo from [Fred Seibert](https://www.flickr.com/photos/84568447@N00/10180516125/)
+TV icon from [IcoMoon](https://icomoon.io/#icons), licensed [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/)
+
+Refresh icon made by [Freepik](http://www.freepik.com) from [www.flaticon.com](http://www.flaticon.com) is licensed under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/)

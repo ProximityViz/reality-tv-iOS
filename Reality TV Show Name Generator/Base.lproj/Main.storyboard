@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,30 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fancy tv" translatesAutoresizingMaskIntoConstraints="NO" id="T10-gB-rPY">
-                                <rect key="frame" x="157" y="86" width="286" height="275"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tv" translatesAutoresizingMaskIntoConstraints="NO" id="T10-gB-rPY">
+                                <rect key="frame" x="157" y="42" width="286" height="275"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="275" id="RxD-bU-Taw"/>
                                     <constraint firstAttribute="width" constant="286" id="Rya-v5-hZh"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Real Housewives of Goes to College" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYM-ds-W2t">
-                                <rect key="frame" x="200" y="146" width="200" height="126"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkJ-EL-hjn">
+                                <rect key="frame" x="250" y="431" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="126" id="LkW-3p-z0P"/>
-                                    <constraint firstAttribute="width" constant="200" id="e7H-xv-7LK"/>
+                                    <constraint firstAttribute="width" constant="100" id="DC5-g0-Bi7"/>
+                                    <constraint firstAttribute="height" constant="100" id="vUQ-0H-PMG"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkJ-EL-hjn">
-                                <rect key="frame" x="200" y="401" width="200" height="42"/>
-                                <color key="backgroundColor" red="0.0" green="0.41568630933761597" blue="0.79607850313186646" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="DC5-g0-Bi7"/>
-                                    <constraint firstAttribute="height" constant="42" id="vUQ-0H-PMG"/>
-                                </constraints>
-                                <state key="normal" title="Generate">
+                                <state key="normal" backgroundImage="refresh65">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -53,39 +44,49 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gge-aM-1NG">
-                                <rect key="frame" x="200" y="486" width="200" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Real Housewives of Goes to College" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYM-ds-W2t">
+                                <rect key="frame" x="200" y="146" width="200" height="126"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="es3-5q-mxv"/>
-                                    <constraint firstAttribute="height" constant="42" id="fuw-2q-C0p"/>
+                                    <constraint firstAttribute="height" constant="126" id="LkW-3p-z0P"/>
+                                    <constraint firstAttribute="width" constant="200" id="e7H-xv-7LK"/>
                                 </constraints>
-                                <state key="normal" title="Share">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="shareName:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fiA-cy-LYd"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6B-Ow-8ew">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="bEG-Ne-Y5K"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="flexibleSpace" id="PFN-rO-5EU"/>
+                                    <barButtonItem systemItem="action" id="MVV-ca-ie5">
+                                        <connections>
+                                            <action selector="shareName:" destination="vXZ-lx-hvc" id="vCQ-uS-Yed"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.070588238537311554" green="0.64705884456634521" blue="0.44313728809356689" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="T10-gB-rPY" secondAttribute="centerX" id="0K4-DO-pWz"/>
-                            <constraint firstItem="T10-gB-rPY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="66" id="5ZD-PJ-jzh"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="m6B-Ow-8ew" secondAttribute="bottom" id="5Mm-R7-K4L"/>
+                            <constraint firstItem="T10-gB-rPY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="22" id="5ZD-PJ-jzh"/>
                             <constraint firstAttribute="centerX" secondItem="IkJ-EL-hjn" secondAttribute="centerX" id="8Bm-tE-AYB"/>
-                            <constraint firstAttribute="centerX" secondItem="gge-aM-1NG" secondAttribute="centerX" id="Jfr-8O-8Vs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m6B-Ow-8ew" secondAttribute="trailing" constant="-16" id="FP5-QR-l5s"/>
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="Mi9-rH-eSi"/>
-                            <constraint firstItem="gge-aM-1NG" firstAttribute="top" secondItem="IkJ-EL-hjn" secondAttribute="bottom" constant="43" id="Ua7-Ab-KqN"/>
+                            <constraint firstItem="m6B-Ow-8ew" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="N5C-Sc-szC"/>
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="dGd-km-pQN"/>
+                            <constraint firstItem="m6B-Ow-8ew" firstAttribute="top" secondItem="IkJ-EL-hjn" secondAttribute="bottom" constant="25" id="dTR-yH-0qr"/>
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="fRg-cH-Eqp"/>
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="fXj-BH-kVf"/>
-                            <constraint firstItem="IkJ-EL-hjn" firstAttribute="top" secondItem="T10-gB-rPY" secondAttribute="bottom" constant="40" id="iYA-fY-887"/>
                             <constraint firstAttribute="centerX" secondItem="IkJ-EL-hjn" secondAttribute="centerX" id="uW3-xE-RFX"/>
                             <constraint firstItem="HYM-ds-W2t" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="126" id="zzl-7J-9kB"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="shareButton" destination="gge-aM-1NG" id="7Ju-qP-zKl"/>
+                        <outlet property="shareButton" destination="MVV-ca-ie5" id="dno-u3-HO3"/>
                         <outlet property="tvShowLabel" destination="HYM-ds-W2t" id="mFz-4j-r4t"/>
                     </connections>
                 </viewController>
@@ -94,6 +95,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fancy tv" width="2076" height="1928"/>
+        <image name="refresh65" width="512" height="512"/>
+        <image name="tv" width="853" height="853"/>
     </resources>
 </document>
