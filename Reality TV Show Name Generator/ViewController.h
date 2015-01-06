@@ -13,6 +13,7 @@
 @interface ViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *tvShowLabel;
 @property (weak, nonatomic) NSString *currentName;
+@property (weak, nonatomic) NSString *shareText;
 @property (strong, nonatomic) RandomName *randomName;
 - (IBAction)generateName;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *shareButton;

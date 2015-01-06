@@ -25,7 +25,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkJ-EL-hjn">
-                                <rect key="frame" x="250" y="431" width="100" height="100"/>
+                                <rect key="frame" x="250" y="390" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="DC5-g0-Bi7"/>
                                     <constraint firstAttribute="height" constant="100" id="vUQ-0H-PMG"/>
@@ -78,9 +78,9 @@
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="Mi9-rH-eSi"/>
                             <constraint firstItem="m6B-Ow-8ew" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="N5C-Sc-szC"/>
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="dGd-km-pQN"/>
-                            <constraint firstItem="m6B-Ow-8ew" firstAttribute="top" secondItem="IkJ-EL-hjn" secondAttribute="bottom" constant="25" id="dTR-yH-0qr"/>
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="fRg-cH-Eqp"/>
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="fXj-BH-kVf"/>
+                            <constraint firstAttribute="centerY" secondItem="IkJ-EL-hjn" secondAttribute="centerY" constant="-140" id="geO-qf-42P"/>
                             <constraint firstAttribute="centerX" secondItem="IkJ-EL-hjn" secondAttribute="centerX" id="uW3-xE-RFX"/>
                             <constraint firstItem="HYM-ds-W2t" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="126" id="zzl-7J-9kB"/>
                         </constraints>
