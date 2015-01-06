@@ -18,7 +18,8 @@
 #pragma mark - Random Name
 
 - (void) makeName {
-    self.tvShowLabel.text = [self.randomName createName];
+    self.currentName = [self.randomName createName];
+    self.tvShowLabel.text = self.currentName;
 }
 
 - (void)viewDidLoad {
@@ -34,6 +35,13 @@
 
 - (IBAction)generateName {
     [self makeName];
+}
+
+
+
+- (IBAction)shareName:(id)sender {
+    self.activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[self.currentName] applicationActivities:nil];
+    [self presentViewController:self.activityViewController animated:YES completion:nil];
 }
 @end
 

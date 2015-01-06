@@ -33,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkJ-EL-hjn">
-                                <rect key="frame" x="200" y="488" width="200" height="42"/>
+                                <rect key="frame" x="200" y="401" width="200" height="42"/>
                                 <color key="backgroundColor" red="0.0" green="0.41568630933761597" blue="0.79607850313186646" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="DC5-g0-Bi7"/>
@@ -53,22 +53,39 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gge-aM-1NG">
+                                <rect key="frame" x="200" y="486" width="200" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="es3-5q-mxv"/>
+                                    <constraint firstAttribute="height" constant="42" id="fuw-2q-C0p"/>
+                                </constraints>
+                                <state key="normal" title="Share">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareName:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fiA-cy-LYd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.070588238537311554" green="0.64705884456634521" blue="0.44313728809356689" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="T10-gB-rPY" secondAttribute="centerX" id="0K4-DO-pWz"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="IkJ-EL-hjn" secondAttribute="bottom" constant="70" id="5Am-TB-vr8"/>
                             <constraint firstItem="T10-gB-rPY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="66" id="5ZD-PJ-jzh"/>
                             <constraint firstAttribute="centerX" secondItem="IkJ-EL-hjn" secondAttribute="centerX" id="8Bm-tE-AYB"/>
+                            <constraint firstAttribute="centerX" secondItem="gge-aM-1NG" secondAttribute="centerX" id="Jfr-8O-8Vs"/>
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="Mi9-rH-eSi"/>
+                            <constraint firstItem="gge-aM-1NG" firstAttribute="top" secondItem="IkJ-EL-hjn" secondAttribute="bottom" constant="43" id="Ua7-Ab-KqN"/>
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="dGd-km-pQN"/>
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="fRg-cH-Eqp"/>
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="fXj-BH-kVf"/>
+                            <constraint firstItem="IkJ-EL-hjn" firstAttribute="top" secondItem="T10-gB-rPY" secondAttribute="bottom" constant="40" id="iYA-fY-887"/>
                             <constraint firstAttribute="centerX" secondItem="IkJ-EL-hjn" secondAttribute="centerX" id="uW3-xE-RFX"/>
                             <constraint firstItem="HYM-ds-W2t" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="126" id="zzl-7J-9kB"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="shareButton" destination="gge-aM-1NG" id="7Ju-qP-zKl"/>
                         <outlet property="tvShowLabel" destination="HYM-ds-W2t" id="mFz-4j-r4t"/>
                     </connections>
                 </viewController>

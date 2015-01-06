@@ -12,8 +12,12 @@
 
 @interface ViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *tvShowLabel;
+@property (weak, nonatomic) NSString *currentName;
 @property (strong, nonatomic) RandomName *randomName;
 - (IBAction)generateName;
+@property (weak, nonatomic) IBOutlet UIButton *shareButton;
+- (IBAction)shareName:(id)sender;
+@property (strong, nonatomic) UIActivityViewController *activityViewController;
 
 
 @end
