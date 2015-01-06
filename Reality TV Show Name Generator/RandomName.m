@@ -411,8 +411,8 @@
 }
 
 - (NSString*) createName {
-    int randomFirst = arc4random_uniform(self.firstNames.count);
-    int randomSecond = arc4random_uniform(self.secondNames.count);
+    NSUInteger randomFirst = arc4random_uniform((uint32_t) self.firstNames.count);
+    NSUInteger randomSecond = arc4random_uniform((uint32_t) self.secondNames.count);
     return [NSString stringWithFormat:@"%@ %@", [self.firstNames objectAtIndex:randomFirst], [self.secondNames objectAtIndex:randomSecond]];
 }
 
