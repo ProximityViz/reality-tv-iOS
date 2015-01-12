@@ -52,6 +52,7 @@
     
     // Configure the cell...
     
+    cell.textLabel.textColor = [UIColor whiteColor];
     cell.textLabel.text = self.recentItems[indexPath.row];
     
     return cell;

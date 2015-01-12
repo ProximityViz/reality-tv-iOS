@@ -60,7 +60,7 @@
                                 </constraints>
                                 <items>
                                     <barButtonItem systemItem="flexibleSpace" id="PFN-rO-5EU"/>
-                                    <barButtonItem title="Recent" id="8V5-ku-phJ">
+                                    <barButtonItem image="ios7-clock-outline-small" id="8V5-ku-phJ">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <segue destination="gga-9d-GSU" kind="presentation" identifier="showRecentItems" id="kde-qC-Xu8"/>
@@ -107,7 +107,7 @@
             <objects>
                 <tableViewController id="EEl-dy-Rs4" customClass="RecentItemsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Bhu-ff-YwB">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -116,6 +116,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b8D-tR-lKC" id="vnm-zg-0Yv">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.074509803921568626" green="0.74117647058823533" blue="0.50588235294117645" alpha="1" colorSpace="deviceRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -125,6 +126,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Recent Names" id="Ay7-bg-jeB">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="zkw-gZ-ueH">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="doneWasPressed" destination="EEl-dy-Rs4" id="Qpf-tJ-0L3"/>
                             </connections>
@@ -140,9 +142,13 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gga-9d-GSU" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tr9-ih-l19">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="tr9-ih-l19">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.098039224743843079" green="0.59215688705444336" blue="0.36862745881080627" alpha="1" colorSpace="deviceRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -155,6 +161,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ios7-clock-outline-small" width="30" height="30"/>
         <image name="refresh65" width="512" height="512"/>
         <image name="tv" width="853" height="853"/>
     </resources>
