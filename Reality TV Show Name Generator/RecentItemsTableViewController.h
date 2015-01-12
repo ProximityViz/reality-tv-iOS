@@ -11,5 +11,6 @@
 @interface RecentItemsTableViewController : UITableViewController
 
 @property (nonatomic) NSMutableArray *recentItems;
+@property (strong, nonatomic) UIActivityViewController *activityViewController;
 
 @end

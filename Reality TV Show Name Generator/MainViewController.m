@@ -43,9 +43,9 @@
 }
 
 - (IBAction)shareName:(id)sender {
-    self.shareText = [NSString stringWithFormat:@"%@ %@ %@", @"Random Reality TV Show Name:", self.currentName, @"| Generate your own show name at http://www.realitytvgenerator.com/"];
-    NSLog(@"%@", self.shareText);
-    self.activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[self.shareText] applicationActivities:nil];
+    NSString *shareText = [NSString stringWithFormat:@"%@ %@ %@", @"Random Reality TV Show Name:", self.currentName, @"| Generate your own show name at http://www.realitytvgenerator.com/"];
+    NSLog(@"%@", shareText);
+    self.activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[shareText] applicationActivities:nil];
     [self presentViewController:self.activityViewController animated:YES completion:nil];
 }
 
