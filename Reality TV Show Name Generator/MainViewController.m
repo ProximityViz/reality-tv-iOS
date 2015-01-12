@@ -51,9 +51,9 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showRecentItems"]) {
-        RecentItemsTableViewController *recentItemsTVC = segue.destinationViewController;
+        UINavigationController *navController = (UINavigationController *)[segue destinationViewController];
+        RecentItemsTableViewController *recentItemsTVC = [navController topViewController];
         recentItemsTVC.recentItems = self.recentItems;
-        NSLog(@"Recent items: %@", recentItemsTVC.recentItems);
     }
 }
 

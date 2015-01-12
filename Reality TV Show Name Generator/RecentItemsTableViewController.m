@@ -15,14 +15,8 @@
 
 @implementation RecentItemsTableViewController
 
-- (void)viewWillAppear:(BOOL)animated {
-//    NSLog(@"Array captured: %@", self.recentItems);
-    
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"Array captured: %@", self.recentItems);
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -46,22 +40,22 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
 //    return self.recentItems.count;
-    return 1;
+    return self.recentItems.count;
 }
 
 - (IBAction)doneWasPressed {
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
     
+    cell.textLabel.text = self.recentItems[indexPath.row];
+    
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
