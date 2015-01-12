@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  Reality TV Show Name Generator
 //
 //  Created by Mollie on 12/6/14.
@@ -10,7 +10,7 @@
 
 @class RandomName;
 
-@interface ViewController : UIViewController
+@interface MainViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *tvShowLabel;
 @property (weak, nonatomic) NSString *currentName;
 @property (weak, nonatomic) NSString *shareText;
@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *shareButton;
 - (IBAction)shareName:(id)sender;
 @property (strong, nonatomic) UIActivityViewController *activityViewController;
+
+@property (nonatomic) NSMutableArray *recentItems;
 
 
 @end

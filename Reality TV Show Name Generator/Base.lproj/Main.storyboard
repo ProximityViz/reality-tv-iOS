@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -53,19 +53,27 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6B-Ow-8ew">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6B-Ow-8ew">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="bEG-Ne-Y5K"/>
                                 </constraints>
                                 <items>
                                     <barButtonItem systemItem="flexibleSpace" id="PFN-rO-5EU"/>
+                                    <barButtonItem title="Recent" id="8V5-ku-phJ">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="gga-9d-GSU" kind="presentation" identifier="showRecentItems" id="kde-qC-Xu8"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem systemItem="action" id="MVV-ca-ie5">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <action selector="shareName:" destination="vXZ-lx-hvc" id="vCQ-uS-Yed"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
+                                <color key="barTintColor" red="0.0" green="0.59215688705444336" blue="0.38431376218795776" alpha="1" colorSpace="deviceRGB"/>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.070588238537311554" green="0.64705884456634521" blue="0.44313728809356689" alpha="1" colorSpace="deviceRGB"/>
@@ -92,6 +100,58 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="4" y="137"/>
+        </scene>
+        <!--Recent Names-->
+        <scene sceneID="qtz-Yj-BhO">
+            <objects>
+                <tableViewController id="EEl-dy-Rs4" customClass="RecentItemsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Bhu-ff-YwB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="b8D-tR-lKC">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b8D-tR-lKC" id="vnm-zg-0Yv">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EEl-dy-Rs4" id="zeI-0g-BBS"/>
+                            <outlet property="delegate" destination="EEl-dy-Rs4" id="Zle-R2-pMO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Recent Names" id="Ay7-bg-jeB">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="zkw-gZ-ueH">
+                            <connections>
+                                <action selector="doneWasPressed" destination="EEl-dy-Rs4" id="Qpf-tJ-0L3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ez-aa-21C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1602" y="137"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WjK-PZ-SSv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gga-9d-GSU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tr9-ih-l19">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EEl-dy-Rs4" kind="relationship" relationship="rootViewController" id="ZY3-Wh-KeF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k4V-mx-17a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="137"/>
         </scene>
     </scenes>
     <resources>

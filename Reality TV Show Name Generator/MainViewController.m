@@ -1,25 +1,30 @@
 //
-//  ViewController.m
+//  MainViewController.m
 //  Reality TV Show Name Generator
 //
 //  Created by Mollie on 12/6/14.
 //  Copyright (c) 2014 Proximity Viz LLC. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 #import "RandomName.h"
+#import "RecentItemsTableViewController.h"
 
-@interface ViewController ()
+@interface MainViewController ()
 
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 #pragma mark - Random Name
 
 - (void) makeName {
+    if (!self.recentItems) {
+        self.recentItems = [[NSMutableArray alloc] init];
+    }
     self.currentName = [self.randomName createName];
     self.tvShowLabel.text = self.currentName;
+    [self.recentItems addObject:self.currentName];
 }
 
 - (void)viewDidLoad {
@@ -38,11 +43,19 @@
 }
 
 - (IBAction)shareName:(id)sender {
-//    return [NSString stringWithFormat:@"%@ %@", [self.firstNames objectAtIndex:randomFirst], [self.secondNames objectAtIndex:randomSecond]];
     self.shareText = [NSString stringWithFormat:@"%@ %@ %@", @"Random Reality TV Show Name:", self.currentName, @"| Generate your own show name at http://www.realitytvgenerator.com/"];
     NSLog(@"%@", self.shareText);
     self.activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[self.shareText] applicationActivities:nil];
     [self presentViewController:self.activityViewController animated:YES completion:nil];
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showRecentItems"]) {
+        RecentItemsTableViewController *recentItemsTVC = segue.destinationViewController;
+        recentItemsTVC.recentItems = self.recentItems;
+        NSLog(@"Recent items: %@", recentItemsTVC.recentItems);
+    }
+}
+
 @end
 

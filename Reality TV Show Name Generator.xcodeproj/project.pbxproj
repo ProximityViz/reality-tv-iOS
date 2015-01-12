@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC1DA8D71A6350A4007A15D8 /* RecentItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1DA8D61A6350A4007A15D8 /* RecentItemsTableViewController.m */; };
 		ECF795081A33BAFC0076A193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF795071A33BAFC0076A193 /* main.m */; };
 		ECF7950B1A33BAFC0076A193 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF7950A1A33BAFC0076A193 /* AppDelegate.m */; };
-		ECF7950E1A33BAFC0076A193 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF7950D1A33BAFC0076A193 /* ViewController.m */; };
+		ECF7950E1A33BAFC0076A193 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF7950D1A33BAFC0076A193 /* MainViewController.m */; };
 		ECF795111A33BAFC0076A193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF7950F1A33BAFC0076A193 /* Main.storyboard */; };
 		ECF795131A33BAFC0076A193 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF795121A33BAFC0076A193 /* Images.xcassets */; };
 		ECF795161A33BAFC0076A193 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF795141A33BAFC0076A193 /* LaunchScreen.xib */; };
@@ -28,13 +29,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC1DA8D51A6350A4007A15D8 /* RecentItemsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentItemsTableViewController.h; sourceTree = "<group>"; };
+		EC1DA8D61A6350A4007A15D8 /* RecentItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentItemsTableViewController.m; sourceTree = "<group>"; };
 		ECF795021A33BAFC0076A193 /* Reality TV Show Name Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reality TV Show Name Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF795061A33BAFC0076A193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECF795071A33BAFC0076A193 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECF795091A33BAFC0076A193 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECF7950A1A33BAFC0076A193 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ECF7950C1A33BAFC0076A193 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ECF7950D1A33BAFC0076A193 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ECF7950C1A33BAFC0076A193 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		ECF7950D1A33BAFC0076A193 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		ECF795101A33BAFC0076A193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECF795121A33BAFC0076A193 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ECF795151A33BAFC0076A193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -84,8 +87,10 @@
 		ECF795041A33BAFC0076A193 /* Reality TV Show Name Generator */ = {
 			isa = PBXGroup;
 			children = (
-				ECF7950C1A33BAFC0076A193 /* ViewController.h */,
-				ECF7950D1A33BAFC0076A193 /* ViewController.m */,
+				ECF7950C1A33BAFC0076A193 /* MainViewController.h */,
+				ECF7950D1A33BAFC0076A193 /* MainViewController.m */,
+				EC1DA8D51A6350A4007A15D8 /* RecentItemsTableViewController.h */,
+				EC1DA8D61A6350A4007A15D8 /* RecentItemsTableViewController.m */,
 				ECF7950F1A33BAFC0076A193 /* Main.storyboard */,
 				ECF795121A33BAFC0076A193 /* Images.xcassets */,
 				ECF795141A33BAFC0076A193 /* LaunchScreen.xib */,
@@ -224,7 +229,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECF7950E1A33BAFC0076A193 /* ViewController.m in Sources */,
+				EC1DA8D71A6350A4007A15D8 /* RecentItemsTableViewController.m in Sources */,
+				ECF7950E1A33BAFC0076A193 /* MainViewController.m in Sources */,
 				ECF7952D1A33DA7D0076A193 /* RandomName.m in Sources */,
 				ECF7950B1A33BAFC0076A193 /* AppDelegate.m in Sources */,
 				ECF795081A33BAFC0076A193 /* main.m in Sources */,
