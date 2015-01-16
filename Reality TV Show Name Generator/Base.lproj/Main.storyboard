@@ -50,7 +50,7 @@
                                     <constraint firstAttribute="height" constant="126" id="LkW-3p-z0P"/>
                                     <constraint firstAttribute="width" constant="200" id="e7H-xv-7LK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6B-Ow-8ew">
@@ -61,6 +61,9 @@
                                 <items>
                                     <barButtonItem systemItem="bookmarks" id="HsE-hV-wFo">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="fkK-dh-ria" kind="presentation" id="5ah-xo-A2g"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem systemItem="flexibleSpace" id="PFN-rO-5EU"/>
                                     <barButtonItem image="ios7-clock-outline-small" id="8V5-ku-phJ">
@@ -105,6 +108,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4" y="137"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="j7i-D7-Epy">
+            <objects>
+                <viewController id="fkK-dh-ria" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pHX-3I-ozZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="XUS-UI-ch1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yVi-Cl-jRS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cEI-Sx-3cU">
+                                <rect key="frame" x="16" y="20" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dJc-db-heI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cEI-Sx-3cU" firstAttribute="trailing" secondItem="yVi-Cl-jRS" secondAttribute="trailingMargin" id="7kw-Hj-SLt"/>
+                            <constraint firstItem="cEI-Sx-3cU" firstAttribute="leading" secondItem="yVi-Cl-jRS" secondAttribute="leadingMargin" id="DME-Ne-XGJ"/>
+                            <constraint firstItem="cEI-Sx-3cU" firstAttribute="top" secondItem="pHX-3I-ozZ" secondAttribute="bottom" id="mdJ-80-R6C"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JlF-b3-gmC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="882"/>
         </scene>
         <!--Recent Names-->
         <scene sceneID="qtz-Yj-BhO">
