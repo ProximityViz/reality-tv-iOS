@@ -1,5 +1,5 @@
 //
-//  RecentItemsTableViewController.h
+//  RecentItemsTVC.h
 //  Reality TV Show Name Generator
 //
 //  Created by Mollie on 1/11/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RecentItemsTableViewController : UITableViewController
+@interface RecentItemsTVC : UITableViewController
 
 @property (nonatomic) NSMutableArray *recentItems;
 @property (strong, nonatomic) UIActivityViewController *activityViewController;

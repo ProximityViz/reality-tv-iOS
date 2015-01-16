@@ -1,19 +1,19 @@
 //
-//  RecentItemsTableViewController.m
+//  RecentItemsTVC.m
 //  Reality TV Show Name Generator
 //
 //  Created by Mollie on 1/11/15.
 //  Copyright (c) 2015 Proximity Viz LLC. All rights reserved.
 //
 
-#import "RecentItemsTableViewController.h"
+#import "RecentItemsTVC.h"
 #import "MainViewController.h"
 
-@interface RecentItemsTableViewController ()
+@interface RecentItemsTVC ()
 
 @end
 
-@implementation RecentItemsTableViewController
+@implementation RecentItemsTVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

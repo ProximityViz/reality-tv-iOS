@@ -8,7 +8,7 @@
 
 #import "MainViewController.h"
 #import "RandomName.h"
-#import "RecentItemsTableViewController.h"
+#import "RecentItemsTVC.h"
 
 @interface MainViewController ()
 
@@ -52,7 +52,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showRecentItems"]) {
         UINavigationController *navController = (UINavigationController *)[segue destinationViewController];
-        RecentItemsTableViewController *recentItemsTVC = [navController topViewController];
+        RecentItemsTVC *recentItemsTVC = [navController topViewController];
         recentItemsTVC.recentItems = self.recentItems;
     }
 }
