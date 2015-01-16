@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "RandomName.h"
 #import "RecentItemsTVC.h"
+#import "FavoritesTVC.h"
 
 @interface MainViewController ()
 
@@ -54,6 +55,12 @@
         UINavigationController *navController = (UINavigationController *)[segue destinationViewController];
         RecentItemsTVC *recentItemsTVC = [navController topViewController];
         recentItemsTVC.recentItems = self.recentItems;
+    } else if ([segue.identifier isEqualToString:@"showFavorites"]) {
+        UINavigationController *navController = (UINavigationController *) [segue destinationViewController];
+        
+        FavoritesTVC *favoritesTVC = [navController topViewController];
+//        favoritesTVC.favorites = self.favorites;
+# warning Core Data stuff needs to go in here
     }
 }
 
