@@ -28,6 +28,14 @@
     [self.recentItems addObject:self.currentName];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+    if (!self.favorites) {
+        self.favorites = [[NSMutableArray alloc] init];
+    }
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.randomName = [[RandomName alloc] init];
@@ -50,6 +58,12 @@
     [self presentViewController:self.activityViewController animated:YES completion:nil];
 }
 
+- (IBAction)addFavorite:(id)sender {
+    
+    [self.favorites addObject:self.currentName];
+    
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showRecentItems"]) {
         UINavigationController *navController = (UINavigationController *)[segue destinationViewController];
@@ -59,8 +73,7 @@
         UINavigationController *navController = (UINavigationController *) [segue destinationViewController];
         
         FavoritesTVC *favoritesTVC = [navController topViewController];
-//        favoritesTVC.favorites = self.favorites;
-# warning Core Data stuff needs to go in here
+        favoritesTVC.favorites = self.favorites;
     }
 }
 

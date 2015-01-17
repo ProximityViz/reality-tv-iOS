@@ -30,6 +30,7 @@
                                     <constraint firstAttribute="width" constant="100" id="DC5-g0-Bi7"/>
                                     <constraint firstAttribute="height" constant="100" id="vUQ-0H-PMG"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" backgroundImage="refresh65">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -59,6 +60,12 @@
                                     <constraint firstAttribute="height" constant="44" id="bEG-Ne-Y5K"/>
                                 </constraints>
                                 <items>
+                                    <barButtonItem systemItem="add" id="PuS-9C-58r">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="addFavorite:" destination="vXZ-lx-hvc" id="Mpd-rh-Wfq"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem systemItem="bookmarks" id="HsE-hV-wFo">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>

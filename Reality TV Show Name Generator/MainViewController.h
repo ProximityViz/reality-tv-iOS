@@ -19,6 +19,7 @@
 - (IBAction)shareName:(id)sender;
 @property (strong, nonatomic) UIActivityViewController *activityViewController;
 
+@property (nonatomic) NSMutableArray *favorites;
 @property (nonatomic) NSMutableArray *recentItems;
 
 

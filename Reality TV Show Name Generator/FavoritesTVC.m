@@ -15,37 +15,37 @@
 @implementation FavoritesTVC
 
 - (void)viewDidLoad {
+
     [super viewDidLoad];
     
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+
     return 1;
+
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    
+    return self.favorites.count;
+
 }
 
 - (IBAction)doneWasPressed:(id)sender {
+    
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     cell.textLabel.textColor = [UIColor whiteColor];
-//    cell.textLabel.text = self.recentItems[indexPath.row];
-#warning Core Data stuff
+    cell.textLabel.text = self.favorites[indexPath.row];
     
     cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ios7-upload-outline"]];
     
@@ -70,6 +70,7 @@
         [cell setLayoutMargins:UIEdgeInsetsZero];
     }
 }
+
 
 #pragma mark - Share
 //

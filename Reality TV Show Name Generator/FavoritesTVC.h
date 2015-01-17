@@ -10,7 +10,7 @@
 
 @interface FavoritesTVC : UITableViewController
 
-# warning Core Data array needs to go here
+@property (nonatomic) NSMutableArray *favorites;
 @property (strong, nonatomic) UIActivityViewController *activityViewController;
 
 @end
