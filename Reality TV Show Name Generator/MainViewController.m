@@ -12,6 +12,7 @@
 #import "FavoritesTVC.h"
 
 @interface MainViewController ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *drawerBottomConstraint;
 
 @end
 
@@ -33,6 +34,8 @@
     if (!self.favorites) {
         self.favorites = [[NSMutableArray alloc] init];
     }
+    
+    self.drawerBottomConstraint.constant = -136 + 46;
     
 }
 
@@ -63,6 +66,13 @@
     [self.favorites addObject:self.currentName];
     
 }
+
+- (IBAction)showHideDrawer:(id)sender {
+    
+    self.drawerBottomConstraint.constant = (self.drawerBottomConstraint.constant == -136 + 46) ? 0 : -136 + 46;
+    
+}
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showRecentItems"]) {
