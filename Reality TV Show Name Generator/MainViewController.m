@@ -12,7 +12,11 @@
 #import "FavoritesTVC.h"
 
 @interface MainViewController ()
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *drawerBottomConstraint;
+@property (strong, nonatomic) IBOutlet UILabel *tvShowLabel;
+@property (strong, nonatomic) RandomName *randomName;
+@property (strong, nonatomic) UIActivityViewController *activityViewController;
 
 @end
 

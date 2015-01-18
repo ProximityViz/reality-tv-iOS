@@ -11,6 +11,8 @@
 
 @interface RecentItemsTVC ()
 
+@property (strong, nonatomic) UIActivityViewController *activityViewController;
+
 @end
 
 @implementation RecentItemsTVC

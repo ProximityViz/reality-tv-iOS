@@ -11,6 +11,8 @@
 
 @interface FavoritesTVC ()
 
+@property (strong, nonatomic) UIActivityViewController *activityViewController;
+
 @end
 
 @implementation FavoritesTVC

@@ -12,6 +12,5 @@
 
 @property (nonatomic) NSMutableArray *recentItems;
 @property (nonatomic) NSMutableArray *favorites;
-@property (strong, nonatomic) UIActivityViewController *activityViewController;
 
 @end

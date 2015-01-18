@@ -10,9 +10,6 @@
 
 @interface RandomName : NSObject
 
-@property (strong, nonatomic) NSArray *firstNames;
-@property (strong, nonatomic) NSArray *secondNames;
-
 - (NSString*) createName;
 
 @end

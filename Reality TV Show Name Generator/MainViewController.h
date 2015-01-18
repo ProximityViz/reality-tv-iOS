@@ -11,11 +11,8 @@
 @class RandomName;
 
 @interface MainViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UILabel *tvShowLabel;
-@property (weak, nonatomic) NSString *currentName;
-@property (strong, nonatomic) RandomName *randomName;
-@property (strong, nonatomic) UIActivityViewController *activityViewController;
 
+@property (weak, nonatomic) NSString *currentName;
 @property (nonatomic) BOOL returningToMain;
 @property (nonatomic) NSMutableArray *favorites;
 @property (nonatomic) NSMutableArray *recentItems;
