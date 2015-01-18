@@ -11,6 +11,7 @@
 @interface FavoritesTVC : UITableViewController
 
 @property (nonatomic) NSMutableArray *favorites;
+@property (nonatomic) NSMutableArray *recentItems;
 @property (strong, nonatomic) UIActivityViewController *activityViewController;
 
 @end

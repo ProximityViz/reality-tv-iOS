@@ -24,9 +24,15 @@
     if (!self.recentItems) {
         self.recentItems = [[NSMutableArray alloc] init];
     }
-    self.currentName = [self.randomName createName];
+    
+    // if we are returning to main from favorites or recent items, we want to display the returned name instead of a random name
+    if (self.returningToMain) {
+        self.returningToMain = NO;
+    } else {
+        self.currentName = [self.randomName createName];
+        [self.recentItems addObject:self.currentName];
+    }
     self.tvShowLabel.text = self.currentName;
-    [self.recentItems addObject:self.currentName];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -77,12 +83,14 @@
     if ([segue.identifier isEqualToString:@"showRecentItems"]) {
         UINavigationController *navController = (UINavigationController *)[segue destinationViewController];
         RecentItemsTVC *recentItemsTVC = (RecentItemsTVC *) navController.topViewController;
+        recentItemsTVC.favorites = self.favorites;
         recentItemsTVC.recentItems = self.recentItems;
     } else if ([segue.identifier isEqualToString:@"showFavorites"]) {
         UINavigationController *navController = (UINavigationController *) [segue destinationViewController];
         
         FavoritesTVC *favoritesTVC = (FavoritesTVC *) navController.topViewController;
         favoritesTVC.favorites = self.favorites;
+        favoritesTVC.recentItems = self.recentItems;
     }
 }
 

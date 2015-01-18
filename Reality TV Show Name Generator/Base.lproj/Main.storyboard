@@ -235,6 +235,9 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.074509803921568626" green="0.74117647058823533" blue="0.50588235294117645" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" identifier="showMain" id="ytq-Xh-D2l"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -294,6 +297,9 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.074509803921568626" green="0.74117647058823533" blue="0.50588235294117645" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" identifier="showMain" id="cf9-ea-Y3v"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -347,4 +353,7 @@
         <image name="star-alt" width="44" height="44"/>
         <image name="tv" width="286" height="286"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="cf9-ea-Y3v"/>
+    </inferredMetricsTieBreakers>
 </document>

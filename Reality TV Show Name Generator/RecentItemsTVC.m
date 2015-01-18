@@ -46,8 +46,6 @@
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.textLabel.text = self.recentItems[indexPath.row];
     
-    cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ios7-upload-outline"]];
-    
     return cell;
 }
 
@@ -70,15 +68,20 @@
     }
 }
 
+#pragma mark - Return to MainVC
 
-#pragma mark - Share
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // share
-    NSString *shareText = [NSString stringWithFormat:@"%@ %@ %@", @"Random Reality TV Show Name:", self.recentItems[indexPath.row], @"| Generate your own at http://www.realitytvgenerator.com/"];
-    self.activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[shareText] applicationActivities:nil];
-    [self presentViewController:self.activityViewController animated:YES completion:nil];
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+// if user taps on a cell, they should be returned to the mainVC and see the name they tapped on, with the regular drawer options
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UITableViewCell *)sender {
+    
+    if ([segue.identifier isEqualToString:@"showMain"]) {
+        MainViewController *mVC = (MainViewController *)[segue destinationViewController];
+        mVC.currentName = sender.textLabel.text;
+        mVC.returningToMain = YES;
+#warning Maybe there's a better way to do this?
+        mVC.recentItems = self.recentItems;
+        mVC.favorites = self.favorites;
+    }
+    
 }
 
 

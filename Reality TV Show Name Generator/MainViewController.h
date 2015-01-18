@@ -14,11 +14,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *tvShowLabel;
 @property (weak, nonatomic) NSString *currentName;
 @property (strong, nonatomic) RandomName *randomName;
-- (IBAction)generateName;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *shareButton;
-- (IBAction)shareName:(id)sender;
 @property (strong, nonatomic) UIActivityViewController *activityViewController;
 
+@property (nonatomic) BOOL returningToMain;
 @property (nonatomic) NSMutableArray *favorites;
 @property (nonatomic) NSMutableArray *recentItems;
 
