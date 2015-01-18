@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "ios7-clock-outline-small.png"
+      "filename" : "ios7-loop-strong.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "ios7-clock-outline@2x.png"
+      "filename" : "ios7-loop-strong-1.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "ios7-clock-outline@3x.png"
+      "filename" : "ios7-loop-strong-2.png"
     }
   ],
   "info" : {

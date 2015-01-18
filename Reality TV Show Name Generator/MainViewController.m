@@ -56,7 +56,6 @@
 
 - (IBAction)shareName:(id)sender {
     NSString *shareText = [NSString stringWithFormat:@"%@ %@ %@", @"Random Reality TV Show Name:", self.currentName, @"| Generate your own at http://www.realitytvgenerator.com/"];
-    NSLog(@"%@", shareText);
     self.activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[shareText] applicationActivities:nil];
     [self presentViewController:self.activityViewController animated:YES completion:nil];
 }
@@ -77,12 +76,12 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showRecentItems"]) {
         UINavigationController *navController = (UINavigationController *)[segue destinationViewController];
-        RecentItemsTVC *recentItemsTVC = [navController topViewController];
+        RecentItemsTVC *recentItemsTVC = (RecentItemsTVC *) navController.topViewController;
         recentItemsTVC.recentItems = self.recentItems;
     } else if ([segue.identifier isEqualToString:@"showFavorites"]) {
         UINavigationController *navController = (UINavigationController *) [segue destinationViewController];
         
-        FavoritesTVC *favoritesTVC = [navController topViewController];
+        FavoritesTVC *favoritesTVC = (FavoritesTVC *) navController.topViewController;
         favoritesTVC.favorites = self.favorites;
     }
 }
