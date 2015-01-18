@@ -21,6 +21,11 @@
 
     [super viewDidLoad];
     
+    // set up data
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    self.favorites = [[defaults arrayForKey:@"favorites"] mutableCopy];
+    
 }
 
 #pragma mark - Table view data source
@@ -33,7 +38,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return self.favorites.count;
+    return [self.favorites count];
 
 }
 
@@ -60,9 +65,11 @@
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
         // Delete the row from the data source
         [self.favorites removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [defaults setObject:self.favorites forKey:@"favorites"];
         [tableView reloadData];
         
     }

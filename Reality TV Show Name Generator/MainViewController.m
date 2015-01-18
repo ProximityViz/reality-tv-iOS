@@ -57,6 +57,11 @@
     self.randomName = [[RandomName alloc] init];
     [self makeName];
     
+    // set up data
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    self.favorites = [[defaults arrayForKey:@"favorites"] mutableCopy];
+    
 }
 
 - (IBAction)generateName {
@@ -77,10 +82,18 @@
 
 - (IBAction)addFavorite:(id)sender {
     
+    // add to data
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    if ([self.favorites count] == 0) {
+        self.favorites = [[NSMutableArray alloc] init];
+    }
+    
     // only add if not already favorited
     if (![self.favorites containsObject:self.currentName]) {
         
         [self.favorites addObject:self.currentName];
+        [defaults setObject:self.favorites forKey:@"favorites"];
         
     }
     

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EC1DA8D71A6350A4007A15D8 /* RecentItemsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1DA8D61A6350A4007A15D8 /* RecentItemsTVC.m */; };
-		ECA465521A6B06CD0004963F /* FavoritesData.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA465511A6B06CD0004963F /* FavoritesData.m */; };
 		ECF144BC1A69A1A000F0336D /* FavoritesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF144BB1A69A1A000F0336D /* FavoritesTVC.m */; };
 		ECF795081A33BAFC0076A193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF795071A33BAFC0076A193 /* main.m */; };
 		ECF7950B1A33BAFC0076A193 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF7950A1A33BAFC0076A193 /* AppDelegate.m */; };
@@ -33,8 +32,6 @@
 /* Begin PBXFileReference section */
 		EC1DA8D51A6350A4007A15D8 /* RecentItemsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentItemsTVC.h; sourceTree = "<group>"; };
 		EC1DA8D61A6350A4007A15D8 /* RecentItemsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentItemsTVC.m; sourceTree = "<group>"; };
-		ECA465501A6B06CD0004963F /* FavoritesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesData.h; sourceTree = "<group>"; };
-		ECA465511A6B06CD0004963F /* FavoritesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesData.m; sourceTree = "<group>"; };
 		ECF144BA1A69A1A000F0336D /* FavoritesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTVC.h; sourceTree = "<group>"; };
 		ECF144BB1A69A1A000F0336D /* FavoritesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTVC.m; sourceTree = "<group>"; };
 		ECF795021A33BAFC0076A193 /* Reality TV Show Name Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reality TV Show Name Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,8 +102,6 @@
 				ECF795051A33BAFC0076A193 /* Supporting Files */,
 				ECF7952B1A33DA7D0076A193 /* RandomName.h */,
 				ECF7952C1A33DA7D0076A193 /* RandomName.m */,
-				ECA465501A6B06CD0004963F /* FavoritesData.h */,
-				ECA465511A6B06CD0004963F /* FavoritesData.m */,
 			);
 			path = "Reality TV Show Name Generator";
 			sourceTree = "<group>";
@@ -245,7 +240,6 @@
 				ECF7952D1A33DA7D0076A193 /* RandomName.m in Sources */,
 				ECF7950B1A33BAFC0076A193 /* AppDelegate.m in Sources */,
 				ECF795081A33BAFC0076A193 /* main.m in Sources */,
-				ECA465521A6B06CD0004963F /* FavoritesData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
