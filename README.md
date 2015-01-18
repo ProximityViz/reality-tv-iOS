@@ -1,8 +1,3 @@
-To do
-
-* Add favorites
-* Test share button
-
 Credits
 
 * Share icons from [Ionicons](https://ionicons.com), MIT license
