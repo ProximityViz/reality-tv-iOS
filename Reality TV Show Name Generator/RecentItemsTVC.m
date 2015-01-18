@@ -18,42 +18,46 @@
 @implementation RecentItemsTVC
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections.
+    
     return 1;
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
     return self.recentItems.count;
+    
 }
 
 - (IBAction)doneWasPressed {
+    
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     cell.textLabel.textColor = [UIColor whiteColor];
     cell.textLabel.text = self.recentItems[indexPath.row];
     
     return cell;
+    
 }
 
 #pragma mark - Remove separator inset
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     // Remove separator inset
     if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
         [cell setSeparatorInset:UIEdgeInsetsZero];
@@ -68,6 +72,7 @@
     if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
         [cell setLayoutMargins:UIEdgeInsetsZero];
     }
+    
 }
 
 #pragma mark - Return to MainVC
@@ -76,12 +81,14 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UITableViewCell *)sender {
     
     if ([segue.identifier isEqualToString:@"showMain"]) {
+        
         MainViewController *mVC = (MainViewController *)[segue destinationViewController];
         mVC.currentName = sender.textLabel.text;
         mVC.returningToMain = YES;
 #warning Maybe there's a better way to do this?
         mVC.recentItems = self.recentItems;
         mVC.favorites = self.favorites;
+        
     }
     
 }

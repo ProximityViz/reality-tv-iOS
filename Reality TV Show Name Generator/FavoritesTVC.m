@@ -51,6 +51,7 @@
     cell.textLabel.text = self.favorites[indexPath.row];
     
     return cell;
+    
 }
 
 # pragma  mark - Swipe to delete
@@ -58,10 +59,12 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
         // Delete the row from the data source
         [self.favorites removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
         [tableView reloadData];
+        
     }
     
 }
@@ -69,6 +72,7 @@
 #pragma mark - Remove separator inset
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     // Remove separator inset
     if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
         [cell setSeparatorInset:UIEdgeInsetsZero];
@@ -83,6 +87,7 @@
     if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
         [cell setLayoutMargins:UIEdgeInsetsZero];
     }
+    
 }
 
 #pragma mark - Return to MainVC
@@ -91,11 +96,13 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UITableViewCell *)sender {
     
     if ([segue.identifier isEqualToString:@"showMain"]) {
+        
         MainViewController *mVC = (MainViewController *)[segue destinationViewController];
         mVC.currentName = sender.textLabel.text;
         mVC.returningToMain = YES;
         mVC.recentItems = self.recentItems;
         mVC.favorites = self.favorites;
+        
     }
     
 }

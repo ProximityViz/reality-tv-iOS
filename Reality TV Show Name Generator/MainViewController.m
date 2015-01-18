@@ -25,6 +25,7 @@
 #pragma mark - Random Name
 
 - (void) makeName {
+    
     if (!self.recentItems) {
         self.recentItems = [[NSMutableArray alloc] init];
     }
@@ -37,6 +38,7 @@
         [self.recentItems addObject:self.currentName];
     }
     self.tvShowLabel.text = self.currentName;
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -45,57 +47,72 @@
         self.favorites = [[NSMutableArray alloc] init];
     }
     
-    self.drawerBottomConstraint.constant = -136 + 46;
+    self.drawerBottomConstraint.constant = -90;
     
 }
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     self.randomName = [[RandomName alloc] init];
     [self makeName];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 - (IBAction)generateName {
+    
     [self makeName];
+
 }
 
 - (IBAction)shareName:(id)sender {
+    
     NSString *shareText = [NSString stringWithFormat:@"%@ %@ %@", @"Random Reality TV Show Name:", self.currentName, @"| Generate your own at http://www.realitytvgenerator.com/"];
     self.activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[shareText] applicationActivities:nil];
     [self presentViewController:self.activityViewController animated:YES completion:nil];
+    
+    self.drawerBottomConstraint.constant = -90;
+    
 }
 
 - (IBAction)addFavorite:(id)sender {
     
-    [self.favorites addObject:self.currentName];
+    // only add if not already favorited
+    if (![self.favorites containsObject:self.currentName]) {
+        
+        [self.favorites addObject:self.currentName];
+        
+    }
+    
     
 }
 
 - (IBAction)showHideDrawer:(id)sender {
     
-    self.drawerBottomConstraint.constant = (self.drawerBottomConstraint.constant == -136 + 46) ? 0 : -136 + 46;
+    self.drawerBottomConstraint.constant = (self.drawerBottomConstraint.constant == -90) ? 0 : -90;
     
 }
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
     if ([segue.identifier isEqualToString:@"showRecentItems"]) {
+        
         UINavigationController *navController = (UINavigationController *)[segue destinationViewController];
         RecentItemsTVC *recentItemsTVC = (RecentItemsTVC *) navController.topViewController;
         recentItemsTVC.favorites = self.favorites;
         recentItemsTVC.recentItems = self.recentItems;
+        
     } else if ([segue.identifier isEqualToString:@"showFavorites"]) {
+        
         UINavigationController *navController = (UINavigationController *) [segue destinationViewController];
         
         FavoritesTVC *favoritesTVC = (FavoritesTVC *) navController.topViewController;
         favoritesTVC.favorites = self.favorites;
         favoritesTVC.recentItems = self.recentItems;
+        
     }
+    
 }
 
 @end

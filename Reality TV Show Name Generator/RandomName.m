@@ -405,6 +405,7 @@
     NSUInteger randomFirst = arc4random_uniform((uint32_t) firstNames.count);
     NSUInteger randomSecond = arc4random_uniform((uint32_t) secondNames.count);
     return [NSString stringWithFormat:@"%@ %@", [firstNames objectAtIndex:randomFirst], [secondNames objectAtIndex:randomSecond]];
+    
 }
 
 @end
