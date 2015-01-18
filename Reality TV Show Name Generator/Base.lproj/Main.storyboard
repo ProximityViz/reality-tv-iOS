@@ -17,6 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkJ-EL-hjn">
+                                <rect key="frame" x="270" y="377" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="DC5-g0-Bi7"/>
+                                    <constraint firstAttribute="height" constant="60" id="vUQ-0H-PMG"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="refresh">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateName" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ixu-FJ-Zj7"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tv" translatesAutoresizingMaskIntoConstraints="NO" id="T10-gB-rPY">
                                 <rect key="frame" x="157" y="42" width="286" height="275"/>
                                 <constraints>
@@ -91,6 +106,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="htt-v1-bDa"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
                                         <state key="normal" title="Favorites">
                                             <color key="titleColor" red="0.0" green="0.59215686274509804" blue="0.38431372549019605" alpha="1" colorSpace="deviceRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -105,6 +121,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="zsf-nn-eQU"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="18"/>
                                         <state key="normal" title="Recent">
                                             <color key="titleColor" red="0.0" green="0.59215686274509804" blue="0.38431372549019605" alpha="1" colorSpace="deviceRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -169,21 +186,6 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkJ-EL-hjn">
-                                <rect key="frame" x="270" y="377" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="DC5-g0-Bi7"/>
-                                    <constraint firstAttribute="height" constant="60" id="vUQ-0H-PMG"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="refresh">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="generateName" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ixu-FJ-Zj7"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.59215686274509804" blue="0.38431372549019605" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
