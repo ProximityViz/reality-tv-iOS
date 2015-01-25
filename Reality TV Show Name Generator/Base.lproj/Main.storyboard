@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkJ-EL-hjn">
-                                <rect key="frame" x="270" y="377" width="60" height="60"/>
+                                <rect key="frame" x="270" y="362" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="DC5-g0-Bi7"/>
                                     <constraint firstAttribute="height" constant="60" id="vUQ-0H-PMG"/>
@@ -160,7 +160,7 @@
                             <constraint firstItem="jpB-fN-P3d" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="B52-B3-EzV"/>
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="Mi9-rH-eSi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jpB-fN-P3d" secondAttribute="trailing" constant="-16" id="Yoi-kP-qmp"/>
-                            <constraint firstItem="IkJ-EL-hjn" firstAttribute="top" secondItem="T10-gB-rPY" secondAttribute="bottom" constant="60" id="ceK-01-AvL"/>
+                            <constraint firstItem="IkJ-EL-hjn" firstAttribute="top" secondItem="T10-gB-rPY" secondAttribute="bottom" constant="45" id="ceK-01-AvL"/>
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="dGd-km-pQN"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="jpB-fN-P3d" secondAttribute="bottom" id="e1j-Ys-FX1"/>
                             <constraint firstAttribute="centerX" secondItem="HYM-ds-W2t" secondAttribute="centerX" id="fRg-cH-Eqp"/>
