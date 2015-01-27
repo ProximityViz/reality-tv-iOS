@@ -17,6 +17,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *tvShowLabel;
 @property (strong, nonatomic) RandomName *randomName;
 @property (strong, nonatomic) UIActivityViewController *activityViewController;
+@property (weak, nonatomic) IBOutlet UIButton *favoriteButton;
+@property (weak, nonatomic) IBOutlet UIButton *shareButton;
 
 @end
 
@@ -48,6 +50,16 @@
     }
     
     self.drawerBottomConstraint.constant = -90;
+    
+    // animate button
+    self.favoriteButton.adjustsImageWhenHighlighted = YES;
+    self.favoriteButton.showsTouchWhenHighlighted = YES;
+    [[self.favoriteButton imageView] setContentMode: UIViewContentModeScaleAspectFit];
+    [self.favoriteButton setImage:[UIImage imageNamed:@"star-alt"] forState:UIControlStateHighlighted];
+    self.shareButton.adjustsImageWhenHighlighted = YES;
+    self.shareButton.showsTouchWhenHighlighted = YES;
+    [[self.shareButton imageView] setContentMode: UIViewContentModeScaleAspectFit];
+    [self.shareButton setImage:[UIImage imageNamed:@"share-alt"] forState:UIControlStateHighlighted];
     
 }
 
@@ -81,6 +93,8 @@
 }
 
 - (IBAction)addFavorite:(id)sender {
+//    [self.favoriteButton setImage:[UIImage animatedImageNamed:@"star-132-anim" duration:1.0] forState:UIControlStateHighlighted];
+//    [self.favoriteButton setImage:[UIImage imageNamed:@"star"] forState:UIControlStateNormal];
     
     // add to data
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

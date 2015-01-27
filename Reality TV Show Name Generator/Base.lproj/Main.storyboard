@@ -178,6 +178,8 @@
                     </view>
                     <connections>
                         <outlet property="drawerBottomConstraint" destination="e1j-Ys-FX1" id="AX8-b3-MXO"/>
+                        <outlet property="favoriteButton" destination="7Xj-na-EE0" id="wzu-rt-b1L"/>
+                        <outlet property="shareButton" destination="MOc-SP-umF" id="kVj-gq-WI8"/>
                         <outlet property="tvShowLabel" destination="HYM-ds-W2t" id="mFz-4j-r4t"/>
                     </connections>
                 </viewController>

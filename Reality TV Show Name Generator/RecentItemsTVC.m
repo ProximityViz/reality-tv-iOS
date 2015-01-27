@@ -85,7 +85,6 @@
         MainViewController *mVC = (MainViewController *)[segue destinationViewController];
         mVC.currentName = sender.textLabel.text;
         mVC.returningToMain = YES;
-#warning Maybe there's a better way to do this?
         mVC.recentItems = self.recentItems;
         mVC.favorites = self.favorites;
         
