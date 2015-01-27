@@ -96,8 +96,10 @@
 //    [self.favoriteButton setImage:[UIImage animatedImageNamed:@"star-132-anim" duration:1.0] forState:UIControlStateHighlighted];
 //    [self.favoriteButton setImage:[UIImage imageNamed:@"star"] forState:UIControlStateNormal];
     
-    // add to data
+    // set up data
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    self.favorites = [[defaults arrayForKey:@"favorites"] mutableCopy];
     
     if ([self.favorites count] == 0) {
         self.favorites = [[NSMutableArray alloc] init];

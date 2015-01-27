@@ -70,7 +70,10 @@
         // Delete the row from the data source
         [self.favorites removeObjectAtIndex:indexPath.row];
         [defaults setObject:self.favorites forKey:@"favorites"];
-        [tableView reloadData];
+        [self.tableView beginUpdates];
+//        [tableView reloadData];
+        [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [self.tableView endUpdates];
         
     }
     
