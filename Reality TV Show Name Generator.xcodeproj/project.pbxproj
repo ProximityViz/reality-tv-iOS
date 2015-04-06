@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		EC1DA8D71A6350A4007A15D8 /* RecentItemsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1DA8D61A6350A4007A15D8 /* RecentItemsTVC.m */; };
+		EC86B4731AD20A54006B139C /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC86B4721AD20A54006B139C /* InterfaceController.m */; };
+		EC86B4751AD20A54006B139C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC86B4741AD20A54006B139C /* Images.xcassets */; };
+		EC86B4791AD20A54006B139C /* Reality TV Name Generator WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = EC86B4781AD20A54006B139C /* Reality TV Name Generator WatchKit App.app */; };
+		EC86B4811AD20A54006B139C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC86B47F1AD20A54006B139C /* Interface.storyboard */; };
+		EC86B4831AD20A54006B139C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC86B4821AD20A54006B139C /* Images.xcassets */; };
+		EC86B4861AD20A54006B139C /* Reality TV Name Generator WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC86B46D1AD20A54006B139C /* Reality TV Name Generator WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC86B48E1AD20EA1006B139C /* RandomName.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF7952C1A33DA7D0076A193 /* RandomName.m */; };
 		ECF144BC1A69A1A000F0336D /* FavoritesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF144BB1A69A1A000F0336D /* FavoritesTVC.m */; };
 		ECF795081A33BAFC0076A193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF795071A33BAFC0076A193 /* main.m */; };
 		ECF7950B1A33BAFC0076A193 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF7950A1A33BAFC0076A193 /* AppDelegate.m */; };
@@ -20,6 +27,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		EC86B47A1AD20A54006B139C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF794FA1A33BAFC0076A193 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC86B4771AD20A54006B139C;
+			remoteInfo = "Reality TV Name Generator WatchKit App";
+		};
+		EC86B4841AD20A54006B139C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF794FA1A33BAFC0076A193 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC86B46C1AD20A54006B139C;
+			remoteInfo = "Reality TV Name Generator WatchKit Extension";
+		};
 		ECF7951C1A33BAFC0076A193 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ECF794FA1A33BAFC0076A193 /* Project object */;
@@ -29,9 +50,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EC86B48D1AD20A54006B139C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EC86B4861AD20A54006B139C /* Reality TV Name Generator WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		EC1DA8D51A6350A4007A15D8 /* RecentItemsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentItemsTVC.h; sourceTree = "<group>"; };
 		EC1DA8D61A6350A4007A15D8 /* RecentItemsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentItemsTVC.m; sourceTree = "<group>"; };
+		EC86B46D1AD20A54006B139C /* Reality TV Name Generator WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Reality TV Name Generator WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC86B4701AD20A54006B139C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC86B4711AD20A54006B139C /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		EC86B4721AD20A54006B139C /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		EC86B4741AD20A54006B139C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EC86B4781AD20A54006B139C /* Reality TV Name Generator WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reality TV Name Generator WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC86B47E1AD20A54006B139C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC86B4801AD20A54006B139C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EC86B4821AD20A54006B139C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ECF144BA1A69A1A000F0336D /* FavoritesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTVC.h; sourceTree = "<group>"; };
 		ECF144BB1A69A1A000F0336D /* FavoritesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTVC.m; sourceTree = "<group>"; };
 		ECF795021A33BAFC0076A193 /* Reality TV Show Name Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reality TV Show Name Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +96,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EC86B46A1AD20A54006B139C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ECF794FF1A33BAFC0076A193 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,11 +120,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC86B46E1AD20A54006B139C /* Reality TV Name Generator WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EC86B4711AD20A54006B139C /* InterfaceController.h */,
+				EC86B4721AD20A54006B139C /* InterfaceController.m */,
+				EC86B4741AD20A54006B139C /* Images.xcassets */,
+				EC86B46F1AD20A54006B139C /* Supporting Files */,
+			);
+			path = "Reality TV Name Generator WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		EC86B46F1AD20A54006B139C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC86B4701AD20A54006B139C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC86B47C1AD20A54006B139C /* Reality TV Name Generator WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EC86B47F1AD20A54006B139C /* Interface.storyboard */,
+				EC86B4821AD20A54006B139C /* Images.xcassets */,
+				EC86B47D1AD20A54006B139C /* Supporting Files */,
+			);
+			path = "Reality TV Name Generator WatchKit App";
+			sourceTree = "<group>";
+		};
+		EC86B47D1AD20A54006B139C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC86B47E1AD20A54006B139C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		ECF794F91A33BAFC0076A193 = {
 			isa = PBXGroup;
 			children = (
 				ECF795041A33BAFC0076A193 /* Reality TV Show Name Generator */,
 				ECF7951E1A33BAFC0076A193 /* Reality TV Show Name GeneratorTests */,
+				EC86B46E1AD20A54006B139C /* Reality TV Name Generator WatchKit Extension */,
+				EC86B47C1AD20A54006B139C /* Reality TV Name Generator WatchKit App */,
 				ECF795031A33BAFC0076A193 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +173,8 @@
 			children = (
 				ECF795021A33BAFC0076A193 /* Reality TV Show Name Generator.app */,
 				ECF7951B1A33BAFC0076A193 /* Reality TV Show Name GeneratorTests.xctest */,
+				EC86B46D1AD20A54006B139C /* Reality TV Name Generator WatchKit Extension.appex */,
+				EC86B4781AD20A54006B139C /* Reality TV Name Generator WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +229,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EC86B46C1AD20A54006B139C /* Reality TV Name Generator WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC86B48C1AD20A54006B139C /* Build configuration list for PBXNativeTarget "Reality TV Name Generator WatchKit Extension" */;
+			buildPhases = (
+				EC86B4691AD20A54006B139C /* Sources */,
+				EC86B46A1AD20A54006B139C /* Frameworks */,
+				EC86B46B1AD20A54006B139C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC86B47B1AD20A54006B139C /* PBXTargetDependency */,
+			);
+			name = "Reality TV Name Generator WatchKit Extension";
+			productName = "Reality TV Name Generator WatchKit Extension";
+			productReference = EC86B46D1AD20A54006B139C /* Reality TV Name Generator WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		EC86B4771AD20A54006B139C /* Reality TV Name Generator WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC86B48B1AD20A54006B139C /* Build configuration list for PBXNativeTarget "Reality TV Name Generator WatchKit App" */;
+			buildPhases = (
+				EC86B4761AD20A54006B139C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Reality TV Name Generator WatchKit App";
+			productName = "Reality TV Name Generator WatchKit App";
+			productReference = EC86B4781AD20A54006B139C /* Reality TV Name Generator WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		ECF795011A33BAFC0076A193 /* Reality TV Show Name Generator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECF795251A33BAFC0076A193 /* Build configuration list for PBXNativeTarget "Reality TV Show Name Generator" */;
@@ -144,10 +269,12 @@
 				ECF794FE1A33BAFC0076A193 /* Sources */,
 				ECF794FF1A33BAFC0076A193 /* Frameworks */,
 				ECF795001A33BAFC0076A193 /* Resources */,
+				EC86B48D1AD20A54006B139C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EC86B4851AD20A54006B139C /* PBXTargetDependency */,
 			);
 			name = "Reality TV Show Name Generator";
 			productName = "Reality TV Show Name Generator";
@@ -181,6 +308,14 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Proximity Viz LLC";
 				TargetAttributes = {
+					EC86B46C1AD20A54006B139C = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 34XFQ7WVN3;
+					};
+					EC86B4771AD20A54006B139C = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 34XFQ7WVN3;
+					};
 					ECF795011A33BAFC0076A193 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = 34XFQ7WVN3;
@@ -206,11 +341,31 @@
 			targets = (
 				ECF795011A33BAFC0076A193 /* Reality TV Show Name Generator */,
 				ECF7951A1A33BAFC0076A193 /* Reality TV Show Name GeneratorTests */,
+				EC86B46C1AD20A54006B139C /* Reality TV Name Generator WatchKit Extension */,
+				EC86B4771AD20A54006B139C /* Reality TV Name Generator WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EC86B46B1AD20A54006B139C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC86B4751AD20A54006B139C /* Images.xcassets in Resources */,
+				EC86B4791AD20A54006B139C /* Reality TV Name Generator WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC86B4761AD20A54006B139C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC86B4811AD20A54006B139C /* Interface.storyboard in Resources */,
+				EC86B4831AD20A54006B139C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ECF795001A33BAFC0076A193 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,6 +386,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EC86B4691AD20A54006B139C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC86B4731AD20A54006B139C /* InterfaceController.m in Sources */,
+				EC86B48E1AD20EA1006B139C /* RandomName.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ECF794FE1A33BAFC0076A193 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +419,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		EC86B47B1AD20A54006B139C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC86B4771AD20A54006B139C /* Reality TV Name Generator WatchKit App */;
+			targetProxy = EC86B47A1AD20A54006B139C /* PBXContainerItemProxy */;
+		};
+		EC86B4851AD20A54006B139C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC86B46C1AD20A54006B139C /* Reality TV Name Generator WatchKit Extension */;
+			targetProxy = EC86B4841AD20A54006B139C /* PBXContainerItemProxy */;
+		};
 		ECF7951D1A33BAFC0076A193 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = ECF795011A33BAFC0076A193 /* Reality TV Show Name Generator */;
@@ -263,6 +437,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		EC86B47F1AD20A54006B139C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC86B4801AD20A54006B139C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		ECF7950F1A33BAFC0076A193 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +464,72 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EC86B4871AD20A54006B139C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Reality TV Name Generator WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EC86B4881AD20A54006B139C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = "Reality TV Name Generator WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EC86B4891AD20A54006B139C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Reality_TV_Name_Generator_WatchKit_Extension;
+				INFOPLIST_FILE = "Reality TV Name Generator WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		EC86B48A1AD20A54006B139C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				IBSC_MODULE = Reality_TV_Name_Generator_WatchKit_Extension;
+				INFOPLIST_FILE = "Reality TV Name Generator WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 		ECF795231A33BAFC0076A193 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -362,10 +610,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Reality TV Show Name Generator/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -376,10 +625,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Reality TV Show Name Generator/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -423,6 +673,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EC86B48B1AD20A54006B139C /* Build configuration list for PBXNativeTarget "Reality TV Name Generator WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC86B4891AD20A54006B139C /* Debug */,
+				EC86B48A1AD20A54006B139C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC86B48C1AD20A54006B139C /* Build configuration list for PBXNativeTarget "Reality TV Name Generator WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC86B4871AD20A54006B139C /* Debug */,
+				EC86B4881AD20A54006B139C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		ECF794FD1A33BAFC0076A193 /* Build configuration list for PBXProject "Reality TV Show Name Generator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
